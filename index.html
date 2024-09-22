@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy 6 Months, My Love!</title>
+    <title>Mi felicidad <3</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -167,18 +167,25 @@
         }
 
         .photo-placeholder {
-            width: 160px;
-            height: 200px;
-            background-color: #e9c2a6;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: #8e6e5d;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 3px solid #d48a94;
-            margin-bottom: 20px;
+        width: 160px;
+        height: 300px;
+        background-color: #e9c2a6;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #8e6e5d;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 5px solid #d48a94; /* Changed to less intense dark pink */
+        margin-bottom: 20px;
+        overflow: hidden; /* Ensure images do not overflow the container */
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images cover the container without distortion */
         }
 
         .green-underline {
@@ -233,25 +240,33 @@
             <path d="M50 90 C25 65 10 40 10 25 C10 10 20 0 35 0 C45 0 50 10 50 10 C50 10 55 0 65 0 C80 0 90 10 90 25 C90 40 75 65 50 90" fill="#f8ad9d" stroke="#d48a94" stroke-width="2" />
         </svg>
         <div class="photo-container">
-            <div class="photo-placeholder">foto</div>
-            <div class="photo-placeholder">foto</div>
-            <div class="photo-placeholder">foto</div>
-            <div class="photo-placeholder">fotiko</div>
+            <div class="photo-placeholder">
+                <img src="ily3.jpg" alt="Descripción de la imagen 1">
+            </div>
+            <div class="photo-placeholder">
+                <img src="ily2.jpg" alt="Descripción de la imagen 2">
+            </div>
+            <div class="photo-placeholder">
+                <img src="ily1.jpg" alt="Descripción de la imagen 3">
+            </div>
+            <div class="photo-placeholder">
+                <img src="ily4.jpg" alt="Descripción de la imagen 4">
+            </div>
         </div>
         <p>
             <span class="green-underline">Seis maravillosos</span> meses llenos de risas, amor, felicidad y recuerdos que durarán para siempre.
             Y estaré por siempre contigo para celebrar muchos muchos más meses juntos.
         </p>
         <div class="countdown">
-            <p style="font-size: 2.5rem;">Cuenta regresiva para el año <3:</p>
+            <p style="font-size: 2.5rem;">Cuenta regresiva para el año:</p>
             <p style="font-size: 2.5rem;" id="datetime"></p>
         </div>
-        <button class="button">
+        <a href="gallery.html" class="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
-            View Our Photo Gallery
-        </button>
+            Ver más recuerdos
+        </a>
     </div>
     <script>
         function createFlower() {
