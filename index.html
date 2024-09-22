@@ -36,10 +36,17 @@
             text-align: center;
             max-width: 800px;
             width: 90%;
-            margin: 2rem auto;
+            margin: 8rem auto 2rem auto;
             position: relative;
             z-index: 1;
             border: 10px solid #d48a94;
+        }
+
+        .highlight {
+        background-color: #f7e6d5; /* Lighter tone than the container background */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        display: inline-block;
         }
 
         h1 {
@@ -235,7 +242,10 @@
     </div>
     <div class="floating-container" id="floating-container"></div>
     <div class="container">
-        <h1>Felices 6 meses mi amoor!</h1>
+        <div class="highlight">
+            <h1>Felices 6 meses mi amoor!</h1>
+        </div>
+        <h3><br></h3>
         <svg class="heart-flower" viewBox="0 0 100 100">
             <path d="M50 90 C25 65 10 40 10 25 C10 10 20 0 35 0 C45 0 50 10 50 10 C50 10 55 0 65 0 C80 0 90 10 90 25 C90 40 75 65 50 90" fill="#f8ad9d" stroke="#d48a94" stroke-width="2" />
         </svg>
